@@ -52,4 +52,28 @@ const markupString = `
 
 //richiamo l'elemento html in cui inserire il markup
 const rowEl = document.querySelector('#members .row')
-console.log(rowEl);
+//console.log(rowEl);
+
+//ciclo for per sorrere gli elementi dell'array
+let colsString = ''
+for (let i = 0; i < teamMembers.length; i++) {
+    thisMember = teamMembers[i]
+    //destrutturazione delle proprietà degli oggetti
+    const { name, role, email, img } = thisMember
+    //variabile con stringa markup
+    const markupString = `
+     <div class="col-12 col-md-4">
+        <div class="d-flex bg-black text-white align-items-center">
+            <img src="./assets/img/${img}" class="img-fluid" alt="Foto team">
+            <div class="p-3">
+                <h5 class="fw-bold mb-2">${name}</h5>
+                <p class="mb-2">${role}</p>
+                <p class="text-info">${email}</p>
+            </div>
+        </div>
+    </div>`
+    //console.log(markupString);
+    colsString += markupString
+
+}
+console.log(colsString);
