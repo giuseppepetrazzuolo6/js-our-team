@@ -36,3 +36,16 @@ const teamMembers = [
         img: "img/female3.png"
     }
 ];
+
+//assegno ad una variabile una stringa con il markup
+const markupString = `
+     <div class="col-12 col-md-4">
+        <div class="d-flex bg-black text-white align-items-center">
+            <img src="./assets/img/female1.png" class="img-fluid" alt="Foto team">
+            <div class="p-3">
+                <h5 class="fw-bold mb-2">MARCO BIANCHI</h5>
+                <p class="mb-2">Designer</p>
+                <p class="text-info">marcobianchi@team.com</p>
+            </div>
+        </div>
+    </div>`
