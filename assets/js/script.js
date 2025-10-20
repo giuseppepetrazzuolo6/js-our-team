@@ -64,7 +64,7 @@ for (let i = 0; i < teamMembers.length; i++) {
     const markupString = `
      <div class="col-12 col-md-4">
         <div class="d-flex bg-black text-white align-items-center">
-            <img src="./assets/img/${img}" class="img-fluid" alt="Foto team">
+            <img src="./assets/${img}" class="img-fluid" alt="Foto team">
             <div class="p-3">
                 <h5 class="fw-bold mb-2">${name}</h5>
                 <p class="mb-2">${role}</p>
@@ -76,4 +76,5 @@ for (let i = 0; i < teamMembers.length; i++) {
     colsString += markupString
 
 }
-console.log(colsString);
+//console.log(colsString);
+rowEl.innerHTML = colsString
