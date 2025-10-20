@@ -49,3 +49,7 @@ const markupString = `
             </div>
         </div>
     </div>`
+
+//richiamo l'elemento html in cui inserire il markup
+const rowEl = document.querySelector('#members .row')
+console.log(rowEl);
